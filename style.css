@@ -78,19 +78,41 @@
     filter: grayscale(1);
 }
 
-/*SOLUZIONE ESERCIZIO 6*/
+/*SOLUZIONE ESERCIZIO 7*/
 .ex-7-img {
-    transition: 2s;
+    transition: all 2s;
 }
 
 .ex-7-img:hover {
     filter: grayscale(0.5) sepia(0.5);
 }
 
+/*SOLUZIONE ESERCIZIO 8*/
+.ex-8-img {
+    transition: all 2s;
+}
+
+.ex-8-img:hover {
+    border-radius: 12px;
+    filter: grayscale(0.5) sepia(0.5);
+
+}
+
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+
+    transition: all 2s;
 }
+
+/*SOLUZIONE ESERCIZIO 9*/
+.ex-9-img:hover {
+    border-radius: 20px;
+    filter: grayscale(0.5) sepia(0.5);
+    transform: scale(1.5);
+}
+
+
 .ex-10-icon {
     font-size: 60px;
 }
