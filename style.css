@@ -128,7 +128,31 @@
 
 .ex-11-icon {
     font-size: 60px;
+     
 }
+
+
+/*SOLUZIONE ESERCIZIO 11*/ 
+
+.ex-11-icon:hover {
+    animation: revolution 2s ease-out ;
+}
+
+@keyframes revolution {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(300deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+    
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -157,4 +181,36 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+
+/*SOLUZIONE ESERCIZIO 12*/
+
+.ex-12-button:hover .ex-12-top-white{
+    animation : movetopelement 2s;
+}
+
+@keyframes movetopelement {
+    50% {
+        left: calc( 100% - 60px );
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation : movebottomelement 2s; 
+}
+
+@keyframes movebottomelement {
+
+    50% {
+        right: calc( 100% - 60px );
+    }
+
+    100% {
+        right: 20%;
+    }
 }
