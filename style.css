@@ -115,7 +115,17 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation: rotation 1s linear infinite;
 }
+
+/*SOLUZIONE ESERCIZIO 10*/
+
+@keyframes rotation {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
